@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>Video Gallery</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#000;color:#eee;font-family:Arial,Helvetica,sans-serif}
+.page{width:100%;max-width:1100px;margin:0 auto;padding:10px}
+.banner-wrap{width:100%;margin:0 auto 18px;text-align:center;overflow:hidden}
+.banner-link{display:block;margin:0 auto 10px;text-decoration:none}
+.banner-link.small{max-width:320px}
+.banner-link.large{max-width:500px}
+.banner-link img{display:block;width:100%;height:auto;margin:0 auto;border:0;box-sizing:border-box}
+.banner-link.large img{border:2px solid #ff1f1f}
+.video-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 8px;background:#111;padding:8px;color:#eee}
+.video-card{display:block;min-width:0;color:inherit;text-decoration:none;overflow:hidden}
+.thumb{position:relative;width:100%;aspect-ratio:1.48/1;background:#202020;border:1px solid #555;overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.quality{position:absolute;top:5px;right:5px;background:#333;color:#fff;padding:3px 5px;border-radius:3px;font-size:11px;font-weight:700}
+.video-title{font-size:14px;line-height:1.25;margin:6px 3px 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.video-info{font-size:11px;color:#bbb;margin:0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.video-info span{color:#8db9ff;margin-right:4px}
+.video-info b{display:inline-block;background:#888;color:#111;border-radius:3px;padding:2px 4px;font-weight:400;margin-left:4px}
+.next-page-wrap{max-width:420px;margin:22px auto 10px;padding:0 12px;text-align:center}
+.next-page-btn{display:block;width:100%;padding:15px 12px;background:#000;color:#fff!important;font:bold 18px Arial,sans-serif;text-decoration:none!important;border:1px solid #444;border-radius:0}
+.next-page-btn:active{background:#111}
+a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media(min-width:700px){.page{padding:16px}.video-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 10px;padding:12px}}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="banner-wrap">
+    <a class="banner-link small" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDGROyAdfnyVkODFx6K7qdnuV7J8KspM0EhLIAQ1IUbqCI9dx385KN1Bo8L1ALPdKZkrtHbWkU-qWzsRQ4HpXLCB40gh35u5pjhnYkDFeHAZFNBUDs3K7m2rtfU25Zoxiyq21RtCyRJVoB3Tn_aUz_wmuwlADcMw0sco0J9t0-e9VaEw5Choh15poL7k8/s320/ezgif-7156bf537953b7.gif" alt="Watch Part 2" width="320" height="100" fetchpriority="high" decoding="async">
+    </a>
+    <a class="banner-link large" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg5lQwcj4qqedxEwIrubR-BUHf4ll_Eac7v6Si11oImCkY7U7p3cCuDB9LerpdVdb5gO0LsToklH0790kLMTYu7FkSY8q9HGBDKKpsdhA7C0vqgqkBSdag6uUJr_si6g5JuiqfbvoxFnEOaPe_XiCwtRoK15DGnGxb5uyNJk-m73yi_2YQybtIauxnK-g/w320-h178/r4NhcH%20(1).gif" alt="Watch Full Video" width="320" height="178" loading="lazy" decoding="async">
+    </a>
+  </div>
+
+  <section class="video-gallery" aria-label="Video gallery">
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDofrANzWtSWQhC6yCFgJK5zpgl_iR6QkXkVlqsECHYxEUAdRP_u-pi_vv4VSaMGy2Sl-ENoJ2kfWu6oAql1_9xLTdX_xmeBSVSDfUXlsWF8S4fFolNG7yRSqbmWyp7cFuPpUiWxfaMtw1FbZETsIqB01KehQZ0NA1YdM6ht9eP6O6nI9RklmaRM4PlJI/s320/xv_30_p.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1080p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Miss priya</span> 155.2k <b>18 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKTiiIHykKJHfzTdze4D0QdgfbA7Z3ToUp0ipKh_EcuQJ-LbH3KBEz9ZqOUWe7sUBKSgIbigqMjkbVF6nR74Zdu_xIbXHrbj5fWCOSZxfQ2ByvzIuHlnADfZyayYBNtW4jK-vjCYAtG7_lZFgTY5019sJVzYbWJjYcNbOHldtkqYvLXh9yW86e7ZGkzLY/s320/xv_13_p.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1440p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Lanamyers</span> 792.7k <b>12 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz9yeyJDjYgvfjbFNyTpoowIpQGlFbk60clarOOu99KbqyAYFrvQUQuCSn61j2eUl2QXe4axzHEFRNzMm6dkGHetl7u0aXotMdSqQ7fxxzUbeagnuhJ5BzbXTUlvTGkyQSFrt1GwVPyjym4up1zR-QbnqlachNqfWGyMmIVuujRPyluk5GJE9M96E7gug/s320/xv_25_t.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1080p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Myke Brazil</span> 61.8k <b>11 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkpecwKPkPHD2aWEGEpQsHPL20wtnwA2xMs6APu2oX3_kdobPP-jN-3yLNiKq3-ffUzeD5Os181MHsBM08gxJooayNK_aGiBR5BKaxT40cSRcOVwhZiWDG2S79Q9_NUu9-n3Ld4WKMu3wEqoSPRdRkF3N2yQt2-k9tQ8GHWwOrdfvS0-ldkh9PLrDlpCY/s320/xv_13_p%20(1).webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1080p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Sweetmegha</span> 9.1k <b>38 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1mY_xbSdRF9iPNlCR47LSf9A1qtNsDRCqQcqPb_zJMnjTmxlDztaXUpZOJITCP2CMEc_FRbTtmiiwdhmueOinCbCbhq9eMq0WFZEBrp7e4T3G8V_iCTvT1786feOpiDHZBNKsv5jpJFfB-VK0YK_DW4fOK7AnYUsMoJ7DFLSp_AIG0Ku4HcVOu1jj0Oc/s320/xv_7_t.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1440p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Desislimgirl</span> 18.4k <b>7 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPqglH3yK4FbOgtdtAmewo2LzPjME2LAUjLe5MljISk2iZtcGhQUC084qiCSqD74KCdWNfBEjvUWuROOdIDRynOWGJyLM1DxA55CIUvtLBscpGjZ6nPnwFqehYzc9sCl1plI5RQ9RDsBVjCwKXWuksReGtx56dS1n45LEv86Ym98QR4cKSas9S8eaqTbc/s320/xv_30_p%20(1).webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1080p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Cauan Wink</span> 74.5k <b>8 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAfndEI5tmd5vW8s8lAFWlgMSmRem-hJwqExjyDLkBP20EH_3EDQTKR9FDK6h5iYep8c-T2jIoZna4ooMyYaBPAGSDbBAuPkeRXvAhfITUeS4fS-mgWDFTDIxg4t8Sd6zlL0mNVy2daol1Fs0O9zdAJS4OjTZKVS0yjCcqZ3FcmS9noYvFnxI_a9-86Sc/s320/xv_21_p.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1080p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Rainha Hotwife</span> <b>10 min</b></div></a>
+    <a class="video-card" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer"><div class="thumb"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1ipnaqwB9U92j-sHWrocuKgLb8BLUwCX6VShykLM439uISUw7ZAEyYO3LSHZ5nl5__SpDFU5TC5P0nqNknygx4io_QfsKBFO9D7wQPF7SdjFseA8wg4rOWXe5zmI43jFgPtSwrBX1imoMi81o9jEi2xivneOvdba9KySSXQFecGgeDq-xqsgM92uX0eA/s320/ariella-ferrera-stuffed-with-a-big-cock.webp" loading="lazy" decoding="async" alt="Video thumbnail"><span class="quality">1440p</span></div><div class="video-title">If you want to watch the full video, please click on the button below to continue watching.</div><div class="video-info"><span>Keilafilms_studio</span> <b>13 min</b></div></a>
+  </section>
+
+  <div class="next-page-wrap"><a class="next-page-btn" href="https://www.google.com/url?q=https%3A%2F%2Fstorynest.ajkerbanglatarikh.com%2Fdrama-stories%2Fapps-for-watching-movies%2F&sa=D&sntz=1&usg=AOvVaw0x4vXJojdY400ZA0kUhy4r" target="_blank" rel="noopener noreferrer">NEXT PAGE »</a></div>
+</main>
+</body>
+</html>
